@@ -68,7 +68,7 @@
 
         .map-container {
             margin-top: 20px;
-            width: 90%;
+            width: 50%;
             max-width: 800px;
             height: 70vh;
             display: flex;
@@ -140,13 +140,14 @@
 
     <header>
         <h1>India Geography Quiz</h1>
-        <div class="stats-container">
-            <div id="score-tracker">Regions Identified: 0 / 36</div>
-            <div id="chances-tracker">Chances Left: 3</div>
+        <div width="50%">
+            <div class="stats-container" align="left">
+                <div id="score-tracker">Regions Identified: 0 / 36</div>
+                <div id="chances-tracker">Chances Left: 3</div>
+            </div>
+            <div class="question-box" id="question-text">Click to Start</div>
         </div>
-        <div class="question-box" id="question-text">Click to Start</div>
-
-    <div class="map-container">
+        <div class="map-container">
         <!-- Inside <g id="regions">, swap out these placeholder paths with your high-res paths -->
         <svg id="india-map" viewBox="0 0 950 1050" xmlns="http://www.w3.org/2000/svg">
             <g id="regions">
